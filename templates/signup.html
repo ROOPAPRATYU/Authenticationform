@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: times New roman;
+	background-color:#30D5C8;
+     display:block
+  margin:0px;
+}
+
+.split {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+
+ 
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	width: 80%;
+  text-align: center;
+ background-color: white;
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="split">
+  <div class="centered">
+    <form method='post' action='signup' class='centered'>
+	<u><h1><p>SIGN UP</p></h1></u>
+	<b>FIRST NAME:<input type='text' name='fname' placeholder='enter user first name' required/></br></br>
+	<b>LAST NAME:<input type='text' name='lname' placeholder='enter user last name' required/></br></br>
+	EMAIL ID:<input type='email' name='email' placeholder='enter email id' /></br></br>
+	PASSWORD:<input type="password" id="pwd" name="passwd"
+  	pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+  	placeholder="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required></b><br><br>
+	RE-PASSWORD:<input type="password" id="pwd" name="repasswd"
+  	pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+  	placeholder="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required></b><br><br>
+	<input type='radio'>
+	<label for='male'>MALE</labe/></br></br>
+	<input type='radio'>
+	<label for='female'>FEMALE</labe/></br></br>
+	<select name='country' id='country'>
+		<option value='india'>India</option>
+		<option value='india'>Canada</option>
+		<option value='india'>Quatar</option>
+	</select></br></br>
+	<input type='checkbox'> I agree with terms and condition</br></br>
+	<input type='checkbox'> I want to recieve the newsletter</br></br></br>
+	<input type='submit' value='SUBMIT'/>
+    </from></br>
+    
+  </div>
+
+</div>
+</body>
+</html>

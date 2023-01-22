@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: times New roman;
+  background-color: #30D5C8;
+ }
+
+.split {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 0px;
+}
+  
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.centered img {
+  width: 200px;
+  border-radius: 100%;
+}
+
+.button:hover
+{
+  background-color:blue;
+}
+</style>
+</head>
+<body>
+
+<div class="split" >
+	<div class="centered">
+	<img src='/static/m.jpg'/>
+ 	<form method='POST' action='login'>
+	<u><h1><P>LOGIN</P></h1></u>
+	<b><input type='email' name='emailid' id='email' placeholder='EMAIL'/></br></br>
+	<input type="password" id="password" name="passuser"
+  	pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+  	placeholder="PASSWORD" required></b><br><br></b>
+	<b>FORGOT YOUR PASSWORD?</b></br></br></br>
+	<input type='submit' class='button' value='SIGNIN'></br></br>
+	</form>
+	<form action="signup">
+	<button>REGISTER</button>
+	</form> 
+ 
+</div>
+
+
+
+     
+</body>
+</html> 
